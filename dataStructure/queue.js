@@ -1,4 +1,4 @@
-// 队列先进先出
+// 队列先进先出   事件队列 Event-loop
 
 class Queue {
   constructor () {
