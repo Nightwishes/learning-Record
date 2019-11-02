@@ -2,4 +2,4 @@
 
 ### 数据结构
 
-- [队列](https://github.com/Nightwishes/learning-Record/dataStructure/queue.js)
+- [队列](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/queue.js)
