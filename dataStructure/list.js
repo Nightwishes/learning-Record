@@ -93,4 +93,5 @@ l1.del(n3)
 console.log(l1.search(n4))
 
 l1.xiugai(n4, 90);
+
 console.log(l1.head.next);
