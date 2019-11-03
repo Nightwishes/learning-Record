@@ -13,3 +13,24 @@ let dTraversal = (node, nodeList = []) => {
 }
 
 // 广度优先 先取这个节点的所有兄弟节点然后再取子节点， 先横向再纵向
+
+let wTraversal = (node) => {
+  // 两个数组    一个作为收集节点的数组, 一个作为节点处理的队列
+  let result = [];
+  let queue = [];
+  if (node) {
+    queue.push(node);
+  } else {
+    return 'node为空'
+  }
+  // 当queue不为空时
+  while (queue.length) {
+    let current = queue.shift();
+    result.push(current);
+    let children = current.children;
+    for (let i = 0; i < children.length;i++) {
+      queue.push(children[i]);
+    }
+  }
+  return result;
+}

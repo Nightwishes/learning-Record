@@ -5,7 +5,7 @@
 - [队列](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/queue.js)
 - [栈](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/strack.js)
 - [链表](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/list.js)
-- [集合](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/list.js)
+- [集合](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/set.js)
 
 ### Promise,generator异步相关
 
