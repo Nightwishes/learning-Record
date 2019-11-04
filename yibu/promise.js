@@ -98,6 +98,10 @@ let resolvePromise = (p2, x, resolve, reject) => {
      })
      return p2;
     }
+    // catch的本质就是一个只调用失败回调的then方法
+   catch (onRejected) {
+     this.then(null, onRejected);
+   }
  }
 
  
