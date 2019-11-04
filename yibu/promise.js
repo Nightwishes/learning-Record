@@ -120,3 +120,7 @@ p1.then(data => {
     console.log(data);
   }, 1000);
 })
+
+
+// promise的问题:promise并未真正拜托回掉函数的使用  
+// async + await 实现同步书写代码 (promise + generator的语法糖)
