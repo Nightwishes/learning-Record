@@ -12,3 +12,10 @@
 ### 面试集合
 
   - [实现一个new](https://github.com/Nightwishes/learning-Record/blob/master/interview/new.js)
+ - [深度优先与广度优先](https://github.com/Nightwishes/learning-Record/blob/master/interview/dTraversal.js)
+
+
+ ### 浏览器
+ - [从输入URL到浏览器显示页面，中间经历过什么过程?](https://github.com/Nightwishes/learning-Record/blob/master/browser/smile.pdf)
+ - [强缓存与协商缓存](https://github.com/Nightwishes/learning-Record/blob/master/browser/1.md)
+ 
