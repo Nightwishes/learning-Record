@@ -1,4 +1,4 @@
-## 所有的悲痛都会化为温柔(●'◡'●)
+## 路漫漫其修远兮，吾将上下而求索(●'◡'●)
 
 ### 数据结构
 
@@ -6,6 +6,7 @@
 - [栈](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/strack.js)
 - [链表](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/list.js)
 - [集合](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/set.js)
+- [二叉树](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/binaryTree.js)
 
 ### Promise,generator异步相关
 
