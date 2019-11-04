@@ -9,6 +9,7 @@
 - [二叉树](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/binaryTree.js)
 
 ### Promise,generator异步相关
+- [promise的实现,promise解决什么问题,promise的问题](https://github.com/Nightwishes/learning-Record/blob/master/yibu/promise.js)
 
 ### 面试集合
 
