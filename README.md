@@ -12,6 +12,7 @@
 - [promise的实现,promise解决什么问题,promise的问题](https://github.com/Nightwishes/learning-Record/blob/master/yibu/promise.js)
 - [promise.all,promise.race](https://github.com/Nightwishes/learning-Record/blob/master/yibu/allRace.js)
 - [如何中断一个promise](https://github.com/Nightwishes/learning-Record/blob/master/yibu/break.js)
+- [generator,iterator](https://github.com/Nightwishes/learning-Record/blob/master/yibu/generator.js)
 ### 面试集合
 
   - [实现一个new](https://github.com/Nightwishes/learning-Record/blob/master/interview/new.js)
