@@ -45,3 +45,28 @@
    - cookie有那些属性,相关属性用途，限制?
    - 手写cookie?
    - 设置cookie的多种方式?
+
+### 网络篇
+- [TCP](https://github.com/Nightwishes/learning-Record/blob/master/network/TCP.md)
+  - TCP连接为什么是三次握手,不是2次或4次？
+  - 如何复用TCP连接？
+  - TCP四次挥手流程是咋样的？为什么?
+  - TCP 拥塞控制是什么？怎么工作的？TCP是如何保证传输正确的?
+  - TCP和UDP的区别？
+  - .一个 TCP 连接可以对应几个 HTTP 请求？
+  - 一个 TCP 连接中 HTTP 请求发送可以一起发送么（比如一起发三个请求，再三个响应一起接收）？
+- [http](https://github.com/Nightwishes/learning-Record/blob/master/network/HTTP.md)
+  - HTTP 常见的请求头，用途？
+  - HTTP报文结构体是什么结构？
+  - HTTP 200、206、301、302、304、307、401、403、404、500状态码分别代表什么？用途？
+  - 307和302区别是什么？
+  - XHR 的各种data类型对应的content-type header是什么？
+  - 手写 XHR
+- [HTTP2,HTTPS](https://github.com/Nightwishes/learning-Record/blob/master/network/http2.md)
+  - HTTPS加密算法是什么？
+  - HTTPS建立连接的过程是什么？
+  -中间人攻击是什么？如何避免？数字证书又是什么？作用？如何保证安全性的？
+  - HTTP2和HTTP1.1的区别？
+  - HTTP2中的流、数据帧、多路复用是什么？
+  - 现代浏览器在与服务器建立了一个 TCP 连接后是否会在一个 HTTP 请求完成后断开？什么情况下会断开
+  - 为什么有的时候刷新页面不需要重新建立 SSL 连接？
