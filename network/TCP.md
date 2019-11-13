@@ -65,6 +65,8 @@ http1.1规范Pipelining来试图解决这个问题,浏览器中默认关闭
 <br>
 参考:
 
+[为什么tcp握手是三次?](https://www.zhihu.com/question/24853633)
+
 [tcp的三次握手与四次挥手](https://blog.csdn.net/qq_38950316/article/details/81087809)
 
 [tcp与udp的区别!详细!](https://zhuanlan.zhihu.com/p/24860273)
