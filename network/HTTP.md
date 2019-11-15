@@ -42,7 +42,7 @@ http本质是无状态的可以使用cookies创建有状态的会话
 ### XHR的各种data类型对应的content-type header是什么?
 1. Content-Type的默认值与具体发送的数据类型有关
 2. setRequestHeader 必须在open()方法之后send()方法之前调用
-3.setRequestHeader可以调用多次不会采用覆盖的方式而是采用append的方式
+3. setRequestHeader可以调用多次不会采用覆盖的方式而是采用append的方式
 4. xhr.overrideMineType()是xhr.level1就有的方法,兼容性良好,用来重写response的Content-type
 
 - application/x-www-form-urlencoded
