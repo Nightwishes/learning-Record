@@ -1,3 +1,6 @@
+TCP是传输控制协议 
+
+
 ###  1.TCP连接为什么是三次握手,不是2次或4次？
 
 因为双方都要收到对方的同步信号,初始序列号以确定数据可靠.
@@ -17,7 +20,7 @@
  - SYN(同步,连接建立的同步信号,握手完成后被置为0)
  - FIN(终止,FIN=1表示数据发送完毕,释放运输连接)
 
-1. A发送同步信号SYN + A‘s initial sequence number  
+1. A发送同步信号SYN（ + A‘s initial sequence number  
 2. B确认收到A的同步信号,并记录A的ISN到本地,命名B's ACK suquence number
 3. B发送同步信号SYN + B's initial sequence number
 4. A确认收到B的同步信号，并记录B的ISN到本地,命名A’s ACK suquence number
