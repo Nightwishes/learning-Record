@@ -1,5 +1,3 @@
-TCP是传输控制协议 
-
 
 ###  1.TCP连接为什么是三次握手,不是2次或4次？
 
@@ -62,7 +60,7 @@ Connection: keep-alive.请求后不断开tcp连接这样达到http请求复用�
 <br>
 任意两个http从开始到结束的时间在一个TCP里不能重叠
 <br>
-http1.1规范Pipelining来试图解决这个问题,浏览器中默认关闭
+http1.1规范首部Pipelining来试图解决这个问题,浏览器中默认关闭,但是pipeling中http是单线程串行请求的,所以一个超时的话,其他的只能等待,线头阻塞
 
 <br>
 <br>

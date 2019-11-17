@@ -61,7 +61,6 @@
   - HTTP 200、206、301、302、304、307、401、403、404、500状态码分别代表什么？用途？
   - 307和302区别是什么？
   - XHR 的各种data类型对应的content-type header是什么？
-  - 手写 XHR
 - [HTTP2,HTTPS](https://github.com/Nightwishes/learning-Record/blob/master/network/http2.md)
   - HTTPS加密算法是什么？
   - HTTPS建立连接的过程是什么？

@@ -1,9 +1,9 @@
 http是一种能够获取如HTML这样的网络资源的protocol(通讯协议)是一种clent-server协议<br>
 http本质是无状态的可以使用cookies创建有状态的会话
-### 1.http常见的请求头，用途? [mdn](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers)
+### 1.http常见的首部头，用途? [mdn](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers)
   1. 用来说明浏览器,服务器或者报文主题的一些消息
-  2. 每个请求都是由字段、[空格]、值组成
-  3. 每个请求头都在结束的时候有CRLF
+  2. 每个首部头都是由字段、[空格]、值组成
+  3. 每个首部头都在结束的时候有CRLF
 
 ![](https://upload-images.jianshu.io/upload_images/310976-40f0e13165a53469.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
 ### 2.http报文结构是什么结构？
