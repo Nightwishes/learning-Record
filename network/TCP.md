@@ -19,9 +19,9 @@
  - FIN(终止,FIN=1表示数据发送完毕,释放运输连接)
 
 1. A发送同步信号SYN（ + A‘s initial sequence number  
-2. B确认收到A的同步信号,并记录A的ISN到本地,命名B's ACK suquence number
+2. B确认收到A的同步信号,并记录A的ISN到本地,命名B's ACK sequence number
 3. B发送同步信号SYN + B's initial sequence number
-4. A确认收到B的同步信号，并记录B的ISN到本地,命名A’s ACK suquence number
+4. A确认收到B的同步信号，并记录B的ISN到本地,命名A’s ACK sequence number
 
 > 2,3可以合并所以是三次,如果A向B发送的SYN中途丢失,A会周期性超时重传直到接受到B的ACK为止
 ！

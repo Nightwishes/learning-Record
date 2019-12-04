@@ -1,0 +1,11 @@
+## 如何判断javascript中的this,为什么vue中的methods的this都是vm实例?如何改变this
+
+this的指向是在函数调用的时候确定的.
+
+如果调用函数被某个对象所拥有则函数的this是这个对象。如果函数是独立的则this为undefined。非严格模式undefined会指向全局
+
+
+因为解析vue实例的时候修改了方法中的this指向
+
+
+使用call,apply,bind修改this指向

@@ -68,3 +68,34 @@
   - HTTP2和HTTP1.1的区别？
   - HTTP2中的流、数据帧、多路复用是什么？
   - 为什么有的时候刷新页面不需要重新建立 SSL 连接？
+
+  ### JS基础篇
+  - [es5中的原型链是什么?继承的实现方式有哪些?各个方式的优劣?子类如何向父类传递参数?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/prototype.md)
+  - [es5及es6中类的区别是什么?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/class.md)
+  - [javascript中,执行上下文及执行上下文栈是什么?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/context.md)
+  - [javascript中,==和===的区别是什么？描述一下判断中间的比较过程?都有哪些隐式转换规则?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/equal.md)
+  -[如何判断javascript中的this,为什么vue中的methods的this都是vm实例?如何改变this？](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/this.md)
+  - [call,apply的区别?谁性能更好?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/call.md)
+  - [手写bind函数?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/bind.md)
+  - [ES6中的箭头函数有什么特性？和普通函数有什么区别?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/arrows.md)
+  - [ES6浅拷贝和深拷贝的区别是什么？分别手写实现。es6中浅拷贝和深拷贝分别有哪些应用场景?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/clone.md)
+  - [手写柯里化函数?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/curry.md)
+  - [手写数组的reduce函数?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/reduce.md)
+  - 0.1 + .2 == .3? 为什么?
+    > 0.1的二进制格式是无线循环小数,为了节约内存舍弃精度,所以0.1并不是精确的
+  - [说一说javascript中的事件循环(event-loop?event-loop为什么这么设计?和node中的事件循环有什么区别?](https://github.com/Nightwishes/learning-Record/blob/master/jsbase/eventLoop.md)
+
+  - es6代码如何转换成es5的？
+  > 利用babel 转换1. 将代码字符串转换成AST语法树2. 将AST语法树进行转换,ES6转为ES53. 将AST转换成代码字符串
+
+  - [0,1,2].map(parseInt)的输出是什么?为什么?
+  > [0, NAN, NAN] parsetInt(stirng, radix) radix范围为 2-36 第二项不在范围,第三项表示二进制的数但是二进制只有0,1
+  - input如何处理中文输入?打拼音的时候,有时候其实不需要触发change,直到文字填进去才要
+  - 分别实现DFS和BFS
+  - 使用javascript Proxy实现简单的数据绑定
+  - 观察者模式和订阅-发布模式有什么区别,各自使用于什么场景?
+  - 啥是event loop,有哪些macrotask有哪些microtask?浏览器中的event loop和node中有啥不一样?
+  - 啥是装饰器?啥是高阶函数?啥是高阶组件?
+  - 什么是事件代理?是先冒泡还是先捕获?如何实现事件代理?Vue和React有没有事件代理?如果没有如何实现?
+  - es6的class继承为何一定要写super()?
+  - 手写一个发布订阅
