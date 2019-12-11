@@ -8,6 +8,36 @@
 - [集合](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/set.js)
 - [二叉树](https://github.com/Nightwishes/learning-Record/blob/master/dataStructure/binaryTree.js)
 
+### 算法
+
+1. 反转链表（#206）
+2. [两数之和（#1)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/twoSum.js)
+3. [三数之和（#15）](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/15.treeSum.js)
+4. 多数元素（#169）
+5. 环形链表（#141）
+6. 有效括号（#20）
+7. 设计双端队列（#641）
+8. 两两交换链表节点（#24）
+9. 链表中间节点（#876）
+10. 数组中重复的数（#442）
+11. 删除链表中倒数第N个节点（#19）
+12. 删除链表中的节点（#237）
+13. 合并两个有序链表（#21）
+14. 排序数组（#912）
+15. 求众数（#169）
+16. 缺失的第一个正数（#41）
+17. 如何在 1000 万个整数中快速查找某个整数？
+18. 查找第一个值等于给定值的元素
+19. 查找最后一个值等于给定值的元素
+20. 查找第一个大于等于给定值的元素
+21. 查找第一个小于等于给定值的元素
+22. 搜索旋转排序数组（数组有两段，分别是有序的）（#33）
+23. 搞懂什么是二叉树，满二叉树，二叉查找树，完全二叉树，树的存储方式。
+24. 树的遍历，前序，中序，后序，DFS，BFS
+25. 什么是稳定排序，什么是原地排序
+26. 冒泡、快排、插入、桶排序、归并
+27. 有两个字符串数组，每个数组大约有 10 万条字符串，如何快速找出两个数组中相同的字符串？
+
 ### Promise,generator异步相关
 - [promise的实现,promise解决什么问题,promise的问题](https://github.com/Nightwishes/learning-Record/blob/master/yibu/promise.js)
 - [promise.all,promise.race](https://github.com/Nightwishes/learning-Record/blob/master/yibu/allRace.js)
