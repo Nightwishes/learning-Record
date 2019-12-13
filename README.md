@@ -44,11 +44,11 @@
 - [如何中断一个promise](https://github.com/Nightwishes/learning-Record/blob/master/yibu/break.js)
 - [generator,iterator](https://github.com/Nightwishes/learning-Record/blob/master/yibu/generator.js)
 - [利用promise+generator模拟async+await](https://github.com/Nightwishes/learning-Record/blob/master/yibu/async.js)
-### 面试集合
+### 大杂烩
 
   - [实现一个new](https://github.com/Nightwishes/learning-Record/blob/master/interview/new.js)
  - [深度优先与广度优先](https://github.com/Nightwishes/learning-Record/blob/master/interview/dTraversal.js)
-
+ -[redux,flux,vuex等状态集中管理仓库](https://github.com/Nightwishes/learning-Record/blob/master/interview/redux.md)
 
  ### 浏览器
  - [从输入URL到浏览器显示页面，中间经历过什么过程?](https://github.com/Nightwishes/learning-Record/blob/master/browser/smile.png)
