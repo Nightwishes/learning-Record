@@ -1,3 +1,6 @@
+
+redux是什么? redux三大原则(与flux作比较)? redux流程(reducer纯函数)?
+store的createStore怎么实现的? redux的异步? redux的缺点?
 ## 中央状态集中管理仓库
 
 将组件中需要共享的状态抽象出来集中管理,让状态变化可预测
@@ -50,3 +53,30 @@ store.disptch = function (action) {
 ```
 
 
+``` javascript
+let createStore = (reducer) => {
+  // 存放更新view的监听函数
+  let listens = [];
+  let state;
+  // 订阅view的监听函数
+  let subscribe = (fn) => {
+    listens.push(fn);
+  }
+  // disptch派发action
+  let disptch = (action) => {
+    let state = reducer(action);
+    listens.forEach(l => l());
+  }
+  let getStore = state => state;
+  return {
+    subsribe,
+    disptch,
+    getStore
+  }
+}
+```
+
+redux的缺点就是
+
+1. 子组建的状态必须由父组件中传递而来
+2. 若子组件发生状态变化重新渲染则父组件也要重新渲染.可以使用componentShouldUpdate来优化,判断是否需要重新渲染

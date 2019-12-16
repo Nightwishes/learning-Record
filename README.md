@@ -10,7 +10,7 @@
 
 ### 算法
 
-1. 反转链表（#206）
+1. [反转链表（#206）](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/206.js)
 2. [两数之和（#1)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/twoSum.js)
 3. [三数之和（#15）](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/15.treeSum.js)
 4. 多数元素（#169）
@@ -48,18 +48,18 @@
 
   - [实现一个new](https://github.com/Nightwishes/learning-Record/blob/master/interview/new.js)
  - [深度优先与广度优先](https://github.com/Nightwishes/learning-Record/blob/master/interview/dTraversal.js)
- -[redux,flux,vuex等状态集中管理仓库](https://github.com/Nightwishes/learning-Record/blob/master/interview/redux.md)
+ - [redux,flux,vuex等状态集中管理仓库](https://github.com/Nightwishes/learning-Record/blob/master/interview/redux.md)
 
  ### 浏览器
  - [从输入URL到浏览器显示页面，中间经历过什么过程?](https://github.com/Nightwishes/learning-Record/blob/master/browser/smile.png)
  - [强缓存与协商缓存](https://github.com/Nightwishes/learning-Record/blob/master/browser/1.md)
- - [xss攻击是什么？]() (待整理)
+ - [xss攻击是什么？](https://github.com/Nightwishes/learning-Record/blob/master/browser/xss.md)
     - 原理
     - 如何避免
- - [CSRF攻击是什么?]()(待整理)
+ - [CSRF攻击是什么?](https://github.com/Nightwishes/learning-Record/blob/master/browser/csrf.md)
    - 原理
    - 如何避免
- - [跨域]()(待整理)
+ - [跨域](https://github.com/Nightwishes/learning-Record/blob/master/browser/cors.md)
    - 跨域是什么
    - 为什么有跨域
    - 解决跨域的办法

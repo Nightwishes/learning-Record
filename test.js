@@ -13,10 +13,73 @@ let createStore = (reducer) => {
   let subscribe = (listen) => {
     listens.push(listen);
     return () => {
-
+      listens.filter(listen => listen != listen);
     }
   }
+  return {subscribe, disptch,}
 }
 // react 三大原则 1.单一数据源 只有一个state,flux有多个store,各自管理各自的数据 2.纯函数 flux可能不是纯函数 3.state只读的,flux可能的
 
 // flux与react都是单项数据流
+
+let newFuc  = (fn, ...args) => {
+    // Object.create() 创建一个把__proto__指向传入对象的对象
+    let obj = Object.create(fn.prototype);
+    let result = fn.apply(obj, args);
+    return typeof result === 'object' ? result : obj;
+}
+
+// react 中的key 
+
+// 为了比较diff算法中同级比较的速度,比较一个列表的前后差异,如果列表里每一项都有唯一key值,
+// 那么列表前后可以很快速的比较多了谁缺少了谁
+
+
+// 防抖与节流
+
+// 防抖 如果有高频函数被触发,n秒内如果有高频函数再次被触发重新计算时间
+
+let debounce = (fn) => {
+  let timer = null;
+  return (...args) => {
+    clearTimeout(timer);
+    setTimeout(() => {
+      fn.apply(null, args);
+    }, 500);
+  }
+}
+
+// 节流 n秒内高频函数只执行一次
+
+let throttle = (fn) => {
+  // 用来判断是否执行高频函数
+  let canRun = true;
+  return function () {
+   if (!canRun) {
+     
+   } 
+  }
+}
+
+// 二分搜索
+
+let binarySearch = (arr, target) => {
+  arr = arr.sort((a, b) => a-b);
+  let start = 0;
+  let end = arr.length - 1;
+  while (start <= end) {
+    let mid = parseInt(start + (end -start) / 2);
+    if (arr[mid] == target) {
+      return mid;
+    } else {
+      if (arr[mid] > target) {
+        end = mid - 1;
+      } else {
+        start = mid + 1;
+      }
+    }
+  }
+  }
+let arr = [2, 4, 7,23, 1, 54, 65, 34];
+
+console.log(binarySearch(arr, 23));
