@@ -20,7 +20,9 @@
 8. 两两交换链表节点（#24）
 9. 链表中间节点（#876）
 10. 数组中重复的数（#442）
-
+11. [回文数 (#9)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/9.huiwen.js)
+12. [正数反转(#7)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/7.整数反转.js)
+13. [罗马转整数(#13)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/13.罗马数字转整数.js)
 ### Promise,generator异步相关
 - [promise的实现,promise解决什么问题,promise的问题](https://github.com/Nightwishes/learning-Record/blob/master/yibu/promise.js)
 - [promise.all,promise.race](https://github.com/Nightwishes/learning-Record/blob/master/yibu/allRace.js)
@@ -103,12 +105,63 @@
 
   - [0,1,2].map(parseInt)的输出是什么?为什么?
   > [0, NAN, NAN] parsetInt(stirng, radix) radix范围为 2-36 第二项不在范围,第三项表示二进制的数但是二进制只有0,1
-  - input如何处理中文输入?打拼音的时候,有时候其实不需要触发change,直到文字填进去才要
-  - 分别实现DFS和BFS
-  - 使用javascript Proxy实现简单的数据绑定
-  - 观察者模式和订阅-发布模式有什么区别,各自使用于什么场景?
-  - 啥是event loop,有哪些macrotask有哪些microtask?浏览器中的event loop和node中有啥不一样?
-  - 啥是装饰器?啥是高阶函数?啥是高阶组件?
-  - 什么是事件代理?是先冒泡还是先捕获?如何实现事件代理?Vue和React有没有事件代理?如果没有如何实现?
-  - es6的class继承为何一定要写super()?
-  - 手写一个发布订阅
+### css
+
+1. 常用的选择器？
+   1. 元素选择器
+   2. id选择器
+   3. 类选择器
+2. 选择器的优先级?
+
+ !important > 行内 > id > 类 > 元素
+
+3. 常用的布局?
+
+ 浮动，表格，flex
+
+4. 为什么要初始化css？
+
+ 因为浏览器有自己的默认样式，例如list,还有默认的8px的margin
+
+5. 块级元素与行内元素有那些?
+
+  块: div, ul, p,  form
+  行: a, span, img
+
+6. 如何隐藏一个元素?
+
+   display, visibility, opcity, 改变层级
+
+7. 什么是盒子模型?
+
+  margin + padding + border + content + border + padding + margin
+
+8. box-sizing的值?
+   content-box: 默认值，宽高之外再绘制border
+   border-box:指定的宽度是content+padding+border而不是content
+
+9. position的值，relative和absolute分别是相对谁进行定位的?
+
+   1. absolute: 生成绝对定位的元素，相对于最近一级不是static的父级进行定位
+   2. fixed: 生成绝对定位的元素，相对于浏览器或者frame进行定位
+   3. relative: 生成相对定位的元素,相对于其在普通流的位置进行定位
+   4. static: 默认值.没有定位，元素出现在正常的文档流
+
+10. 什么是BFC? 平时碰见了什么场景?
+
+    BFC(Block formatting context) "块级格式范围".是一个作用范围。一个独立的布局与外界无关系的容器。决定了元素如何对其内容进行定位。
+
+    形成BFC:
+     
+     1. float值不为none
+     2. overflow值不为visible
+     3. display值为table-cell,table-caption,inline-block中的任何一个
+     4. position的值不为relative,static
+
+    BFC作用:
+
+    1. 不和浮动元素重叠
+    2. 清除元素内部浮动
+    3. 防止垂直margin重叠
+
+11. inline-block元素之间的间隙如何去除？
