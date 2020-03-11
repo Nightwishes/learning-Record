@@ -39,7 +39,29 @@ var threeSum = function(nums) {
   }
   return result;
 };
-
+var threeSum = (nums) => {
+  // 先排序
+  nums = nums.sort((a, b) => a - b);
+  // 取最左边为最小值
+  let result = [];
+  let size = nums.length - 1;
+  let i = 0;
+  while (i < size - 2) {
+    let first = i + 1;
+    let last = size;;
+    while (first < last) {
+      let sum = nums[first] + nums[last] + nums[i];
+      if (sum == 0) {
+        result.push(first, last, i);
+      }
+      // sum比较大,last左移
+      if (sum > 0) {
+        while (sum[last] == sum[last--]) {}
+      }
+      } 
+    }
+  }
+}
 // @lc code=end
 
 

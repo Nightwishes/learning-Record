@@ -80,6 +80,95 @@ let binarySearch = (arr, target) => {
     }
   }
   }
+  let binarySearch3 = (arr, target) => {
+    arr = arr.sort((a, b) => a - b);
+    let start = 0;
+    let end = arr.length - 1;
+    while (start <= end) {
+      let mid = parseInt(start + (end - start) / 2);
+      if (arr[mid] == target) {
+        return mid;
+      } else if (arr[mid] > target) {
+        end = mid - 1;
+      } else {
+        start = mid + 1;
+      }
+    }
+  }
 let arr = [2, 4, 7,23, 1, 54, 65, 34];
 
-console.log(binarySearch(arr, 23));
+let binarySearch1 = (arr, target) => {
+  arr = arr.sort((a, b) => a - b);
+  let start = 0;
+  let end = arr.length - 1;
+  while (start <= end) {
+    let mid = parseInt(start + (end - start) / 2);
+    if (arr[mid] == target) {
+      return mid;
+    } else if (arr[mid] > target) {
+      end = mid - 1;
+    } else {
+      start = mid + 1;
+    }
+  }
+}
+                         14*-
+function quickSort(arr) {
+  if (arr.length <= 1) {
+    return arr
+  };
+  var pivotIndex = Math.floor(arr.length / 2);
+  var pivot = arr.splice(pivotIndex, 1)[0];
+  var left = [];
+  var right = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < pivot) {
+      left.push(arr[i]);
+    } else {
+      right.push(arr[i]);
+    }
+  }
+  return quickSort(left).concat([pivot], quickSort(right));
+}
+
+let arr1 = [2,56,7,34,21,43,53,44,88,99,13];
+
+// console.log(quickSort(arr1));
+
+
+function bubbleSort(arr) {
+  var len = arr.length;
+
+  for (var i = 0; i < len - 1; i++) {
+    var n = 0;
+    for (var j = 0; j < len - i; j++) {
+
+      if (arr[j] < arr[j - 1]) {
+        n++;
+        var temp = arr[j];
+        arr[j] = arr[j - 1];
+        arr[j - 1] = temp;
+      }
+
+    }
+    if (n < 1) {
+
+      break;
+    }
+  }
+  return arr;
+}
+function bubbleSort1 (arr) {
+  var len = arr.length;
+  for (let i = 0; i < len - 1; i++) {
+    for (let j = 0; j < len - i; j++) {
+      if (arr[j] < arr[j - 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j - 1];
+        arr[j - 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+console.log(bubbleSort1(arr1));
