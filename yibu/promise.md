@@ -1,13 +1,23 @@
-// promise是标准,为了解决回调地狱的问题
-// 回调地狱,因为javascript是单线程，异步是基于回调函数的，例如在读取A的条件
-// 下再去读取B。类似这样就有可能造成回调地狱
 
- //每一个promise都有三种可能的状态
- //  1. 成功态(furfilled)  2.失败态(rejected 3.挂起等待态(pendding)
- // 每个promise都只能从pendding转为成功与失败,不可逆。Promise类接受一个执行器(excutor)
- // excutor就是我们要完成的任务可能失败或者成功,excutor为立即执行的. 每个实例都应该有resolve,reject方法修改成成功或者失败态
- // 每个实例都应该有保存成功或者失败的回调函数的数组
+ promise是标准,为了解决回调地狱的问题
 
+ 回调地狱,因为javascript是单线程，异步是基于回调函数的，例如在读取A的条件
+
+下再去读取B。类似这样就有可能造成回调地狱
+
+
+每一个promise都有三种可能的状态
+>  1. 成功态(furfilled)  2.失败态(rejected 3.挂起等待态(pendding)
+
+ 每个promise都只能从pendding转为成功与失败,不可逆。Promise类接受一个执行器(excutor)
+
+ excutor就是我们要完成的任务可能失败或者成功,excutor为立即执行的. 每个实例都应该有resolve,reject方法修改成成功或者失败态
+
+ 每个实例都应该有保存成功或者失败的回调函数的数组
+
+ promise的问题:promise并未真正拜托回掉函数的使用  
+async + await 实现同步书写代码 (promise + generator的语法糖)
+``` js
 const FURFLILLED = 'FURFILLED';
 const REJECTED = 'REJECTED';
 const PENDDING = 'PENDDING';
@@ -68,18 +78,22 @@ let resolvePromise = (p2, x, resolve, reject) => {
      let p2 = new Promise((resolve, reject) => {
        // 如果当前状态为成功
        if (this.status === FURFLILLED) {
+         this.onResolvedCallBack.push(() => {
            // 判断执行完成功回调的值是什么？(Promise?常量?)
            // 此时p2还未new完 包裹在setTimeout里
            setTimeout(() => {
             let x = onResolved(this.value);
             resolvePromise(p2, x, resolve, reject); 
            });
+         })
        }
        if (this.status === REJECTED) {
+         this.onRejectedCallBack.push(() => {
            setTimeout(() => {
             let x  = onRejected(this.reason);
             resolvePromise(p2, x, resolve, reject);
            });
+         })
        }
        if (this.status === PENDDING) {
          this.onRejectedCallBack.push(() => {
@@ -112,23 +126,13 @@ let p1 = new Promise((resolve, reject) => {
     reject(err);
   })
 })
-// p1.then(data => {
-//   console.log(data);
-//   return 77777777777;
-// }).then(data => {
-//   setTimeout(() => {
-//     console.log(data);
-//   }, 1000);
-// })
-
-let p2 = new Promise((resolve, reject)=> {
-  resolve(1);
-})
-p2.then(data => {
+p1.then(data => {
+  console.log(data);
+  return 77777777777;
+}).then(data => {
   setTimeout(() => {
     console.log(data);
-    
   }, 1000);
 })
-// promise的问题:promise并未真正拜托回掉函数的使用  
-// async + await 实现同步书写代码 (promise + generator的语法糖)
+
+```
