@@ -3,11 +3,11 @@
 * [路漫漫其修远兮](README.md)
 
 * Promise
-  * [promise的实现,promise解决什么问题,promise的问题](https://github.com/Nightwishes/learning-Record/blob/master/yibu/promise.js)
-  * [promise.all,promise.race](https://github.com/Nightwishes/learning-Record/blob/master/yibu/allRace.js)
-  * [如何中断一个promise](https://github.com/Nightwishes/learning-Record/blob/master/yibu/break.js)
-  * [generator,iterator](https://github.com/Nightwishes/learning-Record/blob/master/yibu/generator.js)
-  * [利用promise+generator模拟async+await](/yibu/async.js)
+  * [promise的实现,promise解决什么问题,promise的问题](./yibu/promise.md)
+  * [promise.all,promise.race](./yibu/allRace.md)
+  * [如何中断一个promise](./yibu/break.md)
+  * [generator,iterator](./yibu/generator.md)
+  * [利用promise+generator模拟async+await](./yibu/async.md)
 
 * 算法
   
