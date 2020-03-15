@@ -17,4 +17,6 @@
   * [回文数 (#9)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/9.huiwen.js)
   * [正数反转(#7)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/7.整数反转.js)
   * [罗马转整数(#13)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/13.罗马数字转整数.js)
-  * [删除排序数组中的重复项](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/14.删除排序数组中的重复项.js)
+  * [删除排序数组中的重复项(#26)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/14.删除排序数组中的重复项.js)
+  * [移除元素(#27)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/27.remove.js)
+  * [实现strStr(#28)](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/28.str.js)
