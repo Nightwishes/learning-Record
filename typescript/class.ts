@@ -37,7 +37,7 @@ let d1 = new Dog("小白");
 // 公共，私有与受保护的修饰符 private:不能在声明它的类的外部使用 protected可以在派生类中使用
 
 class Person {
-  private readonly name;
+  private readonly name:string;
   constructor(name: string) {
     this.name = name;
   }

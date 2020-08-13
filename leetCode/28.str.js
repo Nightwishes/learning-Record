@@ -10,7 +10,7 @@
  * @param {string} needle
  * @return {number}
  */
- // 原生的indexOf可以直接支持 不过这样就没意思了
+ // 原生的indexOf可以直接支持 
 
 // 解法1 正则
 // var strStr = function(haystack, needle) {

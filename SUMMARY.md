@@ -7,7 +7,6 @@
   * [promise.all,promise.race](./yibu/allRace.md)
   * [如何中断一个promise](./yibu/break.md)
   * [generator,iterator](./yibu/generator.md)
-  * [利用promise+generator模拟async+await](./yibu/async.md)
 
 * 算法
   
