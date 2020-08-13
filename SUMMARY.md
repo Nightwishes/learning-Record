@@ -1,15 +1,14 @@
 # Table of contents
 
 * [路漫漫其修远兮](README.md)
+* 年度总结
+  * [2019](./report/2019.md)
 
 * Promise
   * [promise的实现,promise解决什么问题,promise的问题](./yibu/promise.md)
   * [promise.all,promise.race](./yibu/allRace.md)
   * [如何中断一个promise](./yibu/break.md)
   * [generator,iterator](./yibu/generator.md)
-
-* 年度总结
-  * [2019](./report/2019.md)
 
 * 算法
   
