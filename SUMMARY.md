@@ -8,6 +8,9 @@
   * [如何中断一个promise](./yibu/break.md)
   * [generator,iterator](./yibu/generator.md)
 
+* 年度总结
+  * [2019](./report/2019.md)
+
 * 算法
   
   * [反转链表（#206）](https://github.com/Nightwishes/learning-Record/blob/master/leetCode/206.js)
